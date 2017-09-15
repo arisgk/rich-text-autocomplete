@@ -1,5 +1,6 @@
 /* global document */
 /* eslint-disable react/jsx-filename-extension */
+import 'es6-shim';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import createHistory from 'history/createBrowserHistory';

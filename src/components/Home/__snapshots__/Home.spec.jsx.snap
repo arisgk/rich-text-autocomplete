@@ -23,7 +23,7 @@ exports[`Home renders correctly 1`] = `
       }
     }
   >
-    Hello world!
+    <AutocompleteEditor />
   </div>
 </div>
 `;

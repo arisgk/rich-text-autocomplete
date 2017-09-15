@@ -1,6 +1,6 @@
 import React from 'react';
 import AppBar from 'material-ui/AppBar';
-import AutocompleteEditor from './AutocompleteEditor';
+import AutocompleteEditorContainer from '../../containers/AutocompleteEditorContainer';
 
 const styles = {
   container: {
@@ -18,7 +18,7 @@ const Home = () => (
   <div style={styles.container}>
     <AppBar title="Autocomplete" />
     <div style={styles.main}>
-      <AutocompleteEditor />
+      <AutocompleteEditorContainer />
     </div>
   </div>
 );

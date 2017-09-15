@@ -1,0 +1,1 @@
+export const MENTION_SEARCH = 'MENTION_SEARCH';

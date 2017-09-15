@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "draft-js": "^0.10.1",
+    "draft-js-hashtag-plugin": "^2.0.0-rc7",
+    "draft-js-mention-plugin": "^2.0.0-rc7",
+    "draft-js-plugins-editor": "^2.0.0-rc7",
     "es6-shim": "^0.35.3",
     "history": "^4.7.2",
     "material-ui": "^0.19.1",

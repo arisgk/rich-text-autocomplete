@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
-import { CompositeDecorator, Editor, EditorState } from 'draft-js';
-import HandleSpan from './HandleSpan';
-import HashtagSpan from './HashtagSpan';
-import handleStrategy from '../../../utils/decoratorStrategies/handle';
-import hashtagStrategy from '../../../utils/decoratorStrategies/hashtag';
+import { CompositeDecorator, EditorState } from 'draft-js';
+import Editor from 'draft-js-plugins-editor';
+import 'draft-js-mention-plugin/lib/plugin.css';
+import createMentionPlugin, { defaultSuggestionsFilter } from 'draft-js-mention-plugin';
+import mentions from '../../../data/mentions';
+
+const mentionPlugin = createMentionPlugin();
+const { MentionSuggestions } = mentionPlugin;
+const plugins = [mentionPlugin];
 
 const styles = {
   root: {
@@ -22,23 +26,21 @@ const styles = {
 class AutocompleteEditor extends Component {
   constructor() {
     super();
-    const compositeDecorator = new CompositeDecorator([
-      {
-        strategy: handleStrategy,
-        component: HandleSpan,
-      },
-      {
-        strategy: hashtagStrategy,
-        component: HashtagSpan,
-      },
-    ]);
 
     this.state = {
-      editorState: EditorState.createEmpty(compositeDecorator),
+      editorState: EditorState.createEmpty(),
+      suggestions: mentions,
     };
 
     this.focus = () => this.refs.editor.focus();
     this.onChange = editorState => this.setState({ editorState });
+    this.onSearchChange = this.onSearchChange.bind(this);
+  }
+
+  onSearchChange({ value }) {
+    this.setState({
+      suggestions: defaultSuggestionsFilter(value, mentions),
+    });
   }
 
   render() {
@@ -49,7 +51,13 @@ class AutocompleteEditor extends Component {
             editorState={this.state.editorState}
             onChange={this.onChange}
             ref="editor"
+            plugins={plugins}
             spellCheck
+          />
+          <MentionSuggestions
+            onSearchChange={this.onSearchChange}
+            suggestions={this.state.suggestions}
+            onAddMention={this.onAddMention}
           />
         </div>
       </div>

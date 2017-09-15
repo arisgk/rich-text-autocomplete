@@ -1,0 +1,16 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": [
+    "babel",
+    "react",
+  ],
+  "rules": {
+    "no-underscore-dangle": 0,
+    "global-require": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/*.test.js", "**/*.spec.js", "**/*.test.jsx", "**/*.spec.jsx"] }
+    ],
+  }
+}

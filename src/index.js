@@ -1,8 +1,18 @@
+/* global document */
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import createHistory from 'history/createBrowserHistory';
 import registerServiceWorker from './registerServiceWorker';
+import configureStore from './store/configureStore';
+import Root from './containers/Root';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const history = createHistory();
+const store = configureStore(history);
+
+ReactDOM.render(
+  <Root store={store} history={history} />,
+  document.getElementById('root'),
+);
+
 registerServiceWorker();

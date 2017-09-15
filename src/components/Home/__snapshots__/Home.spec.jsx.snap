@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "height": "100vh",
+    }
+  }
+>
+  <AppBar
+    showMenuIconButton={true}
+    title="Autocomplete"
+    zDepth={1}
+  />
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flex": "auto",
+      }
+    }
+  >
+    Hello world!
+  </div>
+</div>
+`;

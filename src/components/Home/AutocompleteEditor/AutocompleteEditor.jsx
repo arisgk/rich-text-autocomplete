@@ -3,10 +3,18 @@ import { CompositeDecorator, EditorState } from 'draft-js';
 import Editor from 'draft-js-plugins-editor';
 import 'draft-js-mention-plugin/lib/plugin.css';
 import createMentionPlugin from 'draft-js-mention-plugin';
+import createHashtagPlugin from './HashtagPlugin';
 
 const mentionPlugin = createMentionPlugin();
 const { MentionSuggestions } = mentionPlugin;
-const plugins = [mentionPlugin];
+
+const hashtagPlugin = createHashtagPlugin();
+const { Suggestions } = hashtagPlugin;
+
+console.log(hashtagPlugin);
+console.log(Suggestions);
+
+const plugins = [mentionPlugin, hashtagPlugin];
 
 const styles = {
   root: {
@@ -54,6 +62,10 @@ class AutocompleteEditor extends Component {
             spellCheck
           />
           <MentionSuggestions
+            onSearchChange={this.onSearchChange}
+            suggestions={mentionSuggestions}
+          />
+          <Suggestions
             onSearchChange={this.onSearchChange}
             suggestions={mentionSuggestions}
           />

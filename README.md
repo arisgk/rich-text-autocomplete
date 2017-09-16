@@ -11,6 +11,8 @@ Check out a [deployed version of the app](https://autocomplete-editor.herokuapp.
 Elements on the list can be chosen using arrow keys and pressing Enter or Tab.
 
 ## Development
+Run `npm install` to install dependencies.
+
 To start the app run `npm start`.
 
 Run the test watcher in an interactive mode using `npm test`.

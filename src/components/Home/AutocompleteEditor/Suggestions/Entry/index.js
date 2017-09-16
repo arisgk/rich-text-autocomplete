@@ -1,6 +1,4 @@
-import React, {
-  Component,
-} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export default class Entry extends Component {
@@ -49,7 +47,7 @@ export default class Entry extends Component {
         onMouseEnter={this.onMouseEnter}
         role="option"
         theme={theme}
-        entity={this.props.option}
+        entry={this.props.option}
         searchValue={searchValue}
       />
     );

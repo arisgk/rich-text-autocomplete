@@ -335,6 +335,8 @@ export class Suggestions extends Component {
       optionPrefix, // eslint-disable-line no-unused-vars
       ...elementProps } = this.props;
 
+    console.log(theme);
+
     return React.cloneElement(
       popoverComponent,
       {

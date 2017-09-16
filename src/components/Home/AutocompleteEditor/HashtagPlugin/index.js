@@ -14,6 +14,8 @@ import defaultPositionSuggestions from '../Suggestions/utils/positionSuggestions
 
 export { default as HashtagSuggestions } from '../Suggestions';
 
+console.log(styles);
+
 export default (config = {}) => {
   const defaultTheme = {
     // CSS class for hashtag text
@@ -97,6 +99,7 @@ export default (config = {}) => {
     trigger = '#',
     regExp = defaultRegExp,
   } = config;
+
   const searchProps = {
     ariaProps,
     callbacks,

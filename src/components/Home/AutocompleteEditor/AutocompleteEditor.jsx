@@ -11,9 +11,6 @@ const { MentionSuggestions } = mentionPlugin;
 const hashtagPlugin = createHashtagPlugin();
 const { Suggestions } = hashtagPlugin;
 
-console.log(hashtagPlugin);
-console.log(Suggestions);
-
 const plugins = [mentionPlugin, hashtagPlugin];
 
 const styles = {

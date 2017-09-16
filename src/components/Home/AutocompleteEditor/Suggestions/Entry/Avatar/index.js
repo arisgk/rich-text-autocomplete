@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Avatar = ({ entity, theme = {} }) => {
-  if (entity.has('avatar')) {
+const Avatar = ({ entry, theme = {} }) => {
+  if (entry.has('avatar')) {
     return (
       <img
-        src={entity.get('avatar')}
+        src={entry.get('avatar')}
         className={theme.suggestionsEntryAvatar}
         role="presentation"
       />

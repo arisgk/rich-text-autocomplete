@@ -3,7 +3,7 @@ import Avatar from './Avatar';
 
 const defaultEntryComponent = (props) => {
   const {
-    entity,
+    entry,
     theme,
     searchValue, // eslint-disable-line no-unused-vars
     ...parentProps
@@ -11,8 +11,8 @@ const defaultEntryComponent = (props) => {
 
   return (
     <div {...parentProps}>
-      <Avatar entity={entity} theme={theme} />
-      <span className={theme.suggestionsEntryText}>{entity.get('name')}</span>
+      <Avatar entry={entry} theme={theme} />
+      <span className={theme.suggestionsEntryText}>{entry.get('name')}</span>
     </div>
   );
 };

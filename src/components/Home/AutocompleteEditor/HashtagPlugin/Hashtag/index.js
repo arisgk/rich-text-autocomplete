@@ -31,7 +31,7 @@ const Hashtag = (props) => {
   } = props;
 
   const combinedClassName = unionClassNames(theme.hashtag, className);
-  const hashtag = fromJS(contentState.getEntity(entityKey).getData().hashtag);
+  const hashtag = fromJS(contentState.getEntity(entityKey).getData().option);
 
   const Component = (
     component || (hashtag.has('link') ? Link : Text)

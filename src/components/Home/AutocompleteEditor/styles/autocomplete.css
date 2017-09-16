@@ -1,3 +1,4 @@
+/* We need to manually import the styles (bug) https://github.com/draft-js-plugins/draft-js-plugins/issues/124 */
 .draftJsMentionPlugin__mention__29BEd, .draftJsMentionPlugin__mention__29BEd:visited {
   color: #03a9f4;
   cursor: pointer;

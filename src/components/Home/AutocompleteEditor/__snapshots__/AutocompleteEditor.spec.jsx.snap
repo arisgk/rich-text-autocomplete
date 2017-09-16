@@ -4,8 +4,8 @@ exports[`AutocompleteEditor renders correctly 1`] = `
 <div
   style={
     Object {
-      "padding": 20,
-      "width": 600,
+      "maxWidth": 800,
+      "width": "96%",
     }
   }
 >
@@ -16,7 +16,7 @@ exports[`AutocompleteEditor renders correctly 1`] = `
         "border": "1px solid #ddd",
         "cursor": "text",
         "fontSize": 16,
-        "minHeight": 40,
+        "minHeight": 120,
         "padding": 10,
       }
     }
@@ -110,6 +110,7 @@ exports[`AutocompleteEditor renders correctly 1`] = `
         }
       }
       onChange={[Function]}
+      placeholder="You can add @persons, #hashtags or <>relations"
       plugins={
         Array [
           Object {
@@ -199,8 +200,8 @@ exports[`AutocompleteEditor renders correctly 2`] = `
 <div
   style={
     Object {
-      "padding": 20,
-      "width": 600,
+      "maxWidth": 800,
+      "width": "96%",
     }
   }
 >
@@ -211,7 +212,7 @@ exports[`AutocompleteEditor renders correctly 2`] = `
         "border": "1px solid #ddd",
         "cursor": "text",
         "fontSize": 16,
-        "minHeight": 40,
+        "minHeight": 120,
         "padding": 10,
       }
     }
@@ -305,6 +306,7 @@ exports[`AutocompleteEditor renders correctly 2`] = `
         }
       }
       onChange={[Function]}
+      placeholder="You can add @persons, #hashtags or <>relations"
       plugins={
         Array [
           Object {
@@ -407,8 +409,8 @@ exports[`AutocompleteEditor renders correctly 3`] = `
 <div
   style={
     Object {
-      "padding": 20,
-      "width": 600,
+      "maxWidth": 800,
+      "width": "96%",
     }
   }
 >
@@ -419,7 +421,7 @@ exports[`AutocompleteEditor renders correctly 3`] = `
         "border": "1px solid #ddd",
         "cursor": "text",
         "fontSize": 16,
-        "minHeight": 40,
+        "minHeight": 120,
         "padding": 10,
       }
     }
@@ -513,6 +515,7 @@ exports[`AutocompleteEditor renders correctly 3`] = `
         }
       }
       onChange={[Function]}
+      placeholder="You can add @persons, #hashtags or <>relations"
       plugins={
         Array [
           Object {
@@ -602,8 +605,8 @@ exports[`AutocompleteEditor renders correctly 4`] = `
 <div
   style={
     Object {
-      "padding": 20,
-      "width": 600,
+      "maxWidth": 800,
+      "width": "96%",
     }
   }
 >
@@ -614,7 +617,7 @@ exports[`AutocompleteEditor renders correctly 4`] = `
         "border": "1px solid #ddd",
         "cursor": "text",
         "fontSize": 16,
-        "minHeight": 40,
+        "minHeight": 120,
         "padding": 10,
       }
     }
@@ -708,6 +711,7 @@ exports[`AutocompleteEditor renders correctly 4`] = `
         }
       }
       onChange={[Function]}
+      placeholder="You can add @persons, #hashtags or <>relations"
       plugins={
         Array [
           Object {
@@ -806,8 +810,8 @@ exports[`AutocompleteEditor renders correctly 5`] = `
 <div
   style={
     Object {
-      "padding": 20,
-      "width": 600,
+      "maxWidth": 800,
+      "width": "96%",
     }
   }
 >
@@ -818,7 +822,7 @@ exports[`AutocompleteEditor renders correctly 5`] = `
         "border": "1px solid #ddd",
         "cursor": "text",
         "fontSize": 16,
-        "minHeight": 40,
+        "minHeight": 120,
         "padding": 10,
       }
     }
@@ -912,6 +916,7 @@ exports[`AutocompleteEditor renders correctly 5`] = `
         }
       }
       onChange={[Function]}
+      placeholder="You can add @persons, #hashtags or <>relations"
       plugins={
         Array [
           Object {
@@ -1019,8 +1024,8 @@ exports[`AutocompleteEditor renders correctly 6`] = `
 <div
   style={
     Object {
-      "padding": 20,
-      "width": 600,
+      "maxWidth": 800,
+      "width": "96%",
     }
   }
 >
@@ -1031,7 +1036,7 @@ exports[`AutocompleteEditor renders correctly 6`] = `
         "border": "1px solid #ddd",
         "cursor": "text",
         "fontSize": 16,
-        "minHeight": 40,
+        "minHeight": 120,
         "padding": 10,
       }
     }
@@ -1125,6 +1130,7 @@ exports[`AutocompleteEditor renders correctly 6`] = `
         }
       }
       onChange={[Function]}
+      placeholder="You can add @persons, #hashtags or <>relations"
       plugins={
         Array [
           Object {

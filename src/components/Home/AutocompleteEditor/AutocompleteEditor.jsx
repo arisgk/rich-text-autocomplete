@@ -4,6 +4,7 @@ import { EditorState } from 'draft-js';
 import Editor from 'draft-js-plugins-editor';
 import createAutocompletePlugin from 'draft-js-mention-plugin';
 import * as schemas from '../../../schemas/propTypes';
+import './styles/editor.css';
 import './styles/autocomplete.css';
 
 const mentionPlugin = createAutocompletePlugin({
@@ -31,14 +32,14 @@ const plugins = [mentionPlugin, hashtagPlugin, relationPlugin];
 
 const styles = {
   root: {
-    padding: 20,
-    width: 600,
+    width: '96%',
+    maxWidth: 800,
   },
   editor: {
     border: '1px solid #ddd',
     cursor: 'text',
     fontSize: 16,
-    minHeight: 40,
+    minHeight: 120,
     padding: 10,
   },
 };
@@ -90,6 +91,7 @@ class AutocompleteEditor extends Component {
             onChange={this.handleEditorChange}
             ref={(editor) => { this.editor = editor; }}
             plugins={plugins}
+            placeholder="You can add @persons, #hashtags or <>relations"
             spellCheck
           />
           <MentionSuggestions

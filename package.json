@@ -11,6 +11,7 @@
     "history": "^4.7.2",
     "material-ui": "^0.19.1",
     "prop-types": "^15.5.10",
+    "radium": "^0.19.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",

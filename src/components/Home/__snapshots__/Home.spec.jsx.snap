@@ -2,6 +2,7 @@
 
 exports[`Home renders correctly 1`] = `
 <div
+  data-radium={true}
   style={
     Object {
       "display": "flex",
@@ -16,13 +17,33 @@ exports[`Home renders correctly 1`] = `
     zDepth={1}
   />
   <div
+    data-radium={true}
     style={
       Object {
+        "AlignItems": "center",
+        "JustifyContent": "center",
+        "WebkitAlignItems": "center",
+        "WebkitFlexDirection": "column",
+        "WebkitJustifyContent": "center",
         "display": "flex",
         "flex": "auto",
+        "flexDirection": "column",
+        "paddingBottom": "10%",
       }
     }
   >
+    <h1
+      data-radium={true}
+      style={
+        Object {
+          "color": "rgba(0,0,0,0.87)",
+          "fontSize": "140%",
+          "marginBottom": 24,
+        }
+      }
+    >
+      Editor
+    </h1>
     <Connect(AutocompleteEditor) />
   </div>
 </div>

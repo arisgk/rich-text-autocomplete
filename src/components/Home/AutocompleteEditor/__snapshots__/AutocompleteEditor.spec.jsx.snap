@@ -1,0 +1,1211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutocompleteEditor renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+      "width": 600,
+    }
+  }
+>
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "border": "1px solid #ddd",
+        "cursor": "text",
+        "fontSize": 16,
+        "minHeight": 40,
+        "padding": 10,
+      }
+    }
+  >
+    <PluginEditor
+      customStyleMap={Object {}}
+      decorators={Array []}
+      defaultBlockRenderMap={true}
+      defaultKeyBindings={true}
+      editorState={
+        EditorState {
+          "_immutable": Object {
+            "allowUndo": true,
+            "currentContent": Object {
+              "blockMap": Object {
+                "123": Object {
+                  "characterList": Array [],
+                  "data": Object {},
+                  "depth": 0,
+                  "key": "123",
+                  "text": "",
+                  "type": "unstyled",
+                },
+              },
+              "entityMap": Object {
+                "__add": [Function],
+                "__create": [Function],
+                "__get": [Function],
+                "__getLastCreatedEntityKey": [Function],
+                "__mergeData": [Function],
+                "__replaceData": [Function],
+                "add": [Function],
+                "create": [Function],
+                "get": [Function],
+                "getLastCreatedEntityKey": [Function],
+                "mergeData": [Function],
+                "replaceData": [Function],
+              },
+              "selectionAfter": Object {
+                "anchorKey": "123",
+                "anchorOffset": 0,
+                "focusKey": "123",
+                "focusOffset": 0,
+                "hasFocus": false,
+                "isBackward": false,
+              },
+              "selectionBefore": Object {
+                "anchorKey": "123",
+                "anchorOffset": 0,
+                "focusKey": "123",
+                "focusOffset": 0,
+                "hasFocus": false,
+                "isBackward": false,
+              },
+            },
+            "decorator": null,
+            "directionMap": Object {
+              "123": "LTR",
+            },
+            "forceSelection": false,
+            "inCompositionMode": false,
+            "inlineStyleOverride": null,
+            "lastChangeType": null,
+            "nativelyRenderedContent": null,
+            "redoStack": Array [],
+            "selection": Object {
+              "anchorKey": "123",
+              "anchorOffset": 0,
+              "focusKey": "123",
+              "focusOffset": 0,
+              "hasFocus": false,
+              "isBackward": false,
+            },
+            "treeMap": Object {
+              "123": Array [
+                Object {
+                  "decoratorKey": null,
+                  "end": 0,
+                  "leaves": Array [
+                    Object {
+                      "end": 0,
+                      "start": 0,
+                    },
+                  ],
+                  "start": 0,
+                },
+              ],
+            },
+            "undoStack": Array [],
+          },
+        }
+      }
+      onChange={[Function]}
+      plugins={
+        Array [
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+        ]
+      }
+      spellCheck={true}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+  </div>
+</div>
+`;
+
+exports[`AutocompleteEditor renders correctly 2`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+      "width": 600,
+    }
+  }
+>
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "border": "1px solid #ddd",
+        "cursor": "text",
+        "fontSize": 16,
+        "minHeight": 40,
+        "padding": 10,
+      }
+    }
+  >
+    <PluginEditor
+      customStyleMap={Object {}}
+      decorators={Array []}
+      defaultBlockRenderMap={true}
+      defaultKeyBindings={true}
+      editorState={
+        EditorState {
+          "_immutable": Object {
+            "allowUndo": true,
+            "currentContent": Object {
+              "blockMap": Object {
+                "123": Object {
+                  "characterList": Array [],
+                  "data": Object {},
+                  "depth": 0,
+                  "key": "123",
+                  "text": "",
+                  "type": "unstyled",
+                },
+              },
+              "entityMap": Object {
+                "__add": [Function],
+                "__create": [Function],
+                "__get": [Function],
+                "__getLastCreatedEntityKey": [Function],
+                "__mergeData": [Function],
+                "__replaceData": [Function],
+                "add": [Function],
+                "create": [Function],
+                "get": [Function],
+                "getLastCreatedEntityKey": [Function],
+                "mergeData": [Function],
+                "replaceData": [Function],
+              },
+              "selectionAfter": Object {
+                "anchorKey": "123",
+                "anchorOffset": 0,
+                "focusKey": "123",
+                "focusOffset": 0,
+                "hasFocus": false,
+                "isBackward": false,
+              },
+              "selectionBefore": Object {
+                "anchorKey": "123",
+                "anchorOffset": 0,
+                "focusKey": "123",
+                "focusOffset": 0,
+                "hasFocus": false,
+                "isBackward": false,
+              },
+            },
+            "decorator": null,
+            "directionMap": Object {
+              "123": "LTR",
+            },
+            "forceSelection": false,
+            "inCompositionMode": false,
+            "inlineStyleOverride": null,
+            "lastChangeType": null,
+            "nativelyRenderedContent": null,
+            "redoStack": Array [],
+            "selection": Object {
+              "anchorKey": "123",
+              "anchorOffset": 0,
+              "focusKey": "123",
+              "focusOffset": 0,
+              "hasFocus": false,
+              "isBackward": false,
+            },
+            "treeMap": Object {
+              "123": Array [
+                Object {
+                  "decoratorKey": null,
+                  "end": 0,
+                  "leaves": Array [
+                    Object {
+                      "end": 0,
+                      "start": 0,
+                    },
+                  ],
+                  "start": 0,
+                },
+              ],
+            },
+            "undoStack": Array [],
+          },
+        }
+      }
+      onChange={[Function]}
+      plugins={
+        Array [
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+        ]
+      }
+      spellCheck={true}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={
+        Array [
+          Object {
+            "avatar": "https://pbs.twimg.com/profile_images/517863945/mattsailing_400x400.jpg",
+            "name": "Matthew Yorke",
+            "title": "Senior Software Engineer",
+          },
+          Object {
+            "avatar": "https://avatars2.githubusercontent.com/u/1188186?v=3&s=400",
+            "name": "Julian Smith",
+            "title": "United Kingdom",
+          },
+        ]
+      }
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+  </div>
+</div>
+`;
+
+exports[`AutocompleteEditor renders correctly 3`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+      "width": 600,
+    }
+  }
+>
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "border": "1px solid #ddd",
+        "cursor": "text",
+        "fontSize": 16,
+        "minHeight": 40,
+        "padding": 10,
+      }
+    }
+  >
+    <PluginEditor
+      customStyleMap={Object {}}
+      decorators={Array []}
+      defaultBlockRenderMap={true}
+      defaultKeyBindings={true}
+      editorState={
+        EditorState {
+          "_immutable": Object {
+            "allowUndo": true,
+            "currentContent": Object {
+              "blockMap": Object {
+                "123": Object {
+                  "characterList": Array [],
+                  "data": Object {},
+                  "depth": 0,
+                  "key": "123",
+                  "text": "",
+                  "type": "unstyled",
+                },
+              },
+              "entityMap": Object {
+                "__add": [Function],
+                "__create": [Function],
+                "__get": [Function],
+                "__getLastCreatedEntityKey": [Function],
+                "__mergeData": [Function],
+                "__replaceData": [Function],
+                "add": [Function],
+                "create": [Function],
+                "get": [Function],
+                "getLastCreatedEntityKey": [Function],
+                "mergeData": [Function],
+                "replaceData": [Function],
+              },
+              "selectionAfter": Object {
+                "anchorKey": "123",
+                "anchorOffset": 0,
+                "focusKey": "123",
+                "focusOffset": 0,
+                "hasFocus": false,
+                "isBackward": false,
+              },
+              "selectionBefore": Object {
+                "anchorKey": "123",
+                "anchorOffset": 0,
+                "focusKey": "123",
+                "focusOffset": 0,
+                "hasFocus": false,
+                "isBackward": false,
+              },
+            },
+            "decorator": null,
+            "directionMap": Object {
+              "123": "LTR",
+            },
+            "forceSelection": false,
+            "inCompositionMode": false,
+            "inlineStyleOverride": null,
+            "lastChangeType": null,
+            "nativelyRenderedContent": null,
+            "redoStack": Array [],
+            "selection": Object {
+              "anchorKey": "123",
+              "anchorOffset": 0,
+              "focusKey": "123",
+              "focusOffset": 0,
+              "hasFocus": false,
+              "isBackward": false,
+            },
+            "treeMap": Object {
+              "123": Array [
+                Object {
+                  "decoratorKey": null,
+                  "end": 0,
+                  "leaves": Array [
+                    Object {
+                      "end": 0,
+                      "start": 0,
+                    },
+                  ],
+                  "start": 0,
+                },
+              ],
+            },
+            "undoStack": Array [],
+          },
+        }
+      }
+      onChange={[Function]}
+      plugins={
+        Array [
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+        ]
+      }
+      spellCheck={true}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+  </div>
+</div>
+`;
+
+exports[`AutocompleteEditor renders correctly 4`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+      "width": 600,
+    }
+  }
+>
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "border": "1px solid #ddd",
+        "cursor": "text",
+        "fontSize": 16,
+        "minHeight": 40,
+        "padding": 10,
+      }
+    }
+  >
+    <PluginEditor
+      customStyleMap={Object {}}
+      decorators={Array []}
+      defaultBlockRenderMap={true}
+      defaultKeyBindings={true}
+      editorState={
+        EditorState {
+          "_immutable": Object {
+            "allowUndo": true,
+            "currentContent": Object {
+              "blockMap": Object {
+                "123": Object {
+                  "characterList": Array [],
+                  "data": Object {},
+                  "depth": 0,
+                  "key": "123",
+                  "text": "",
+                  "type": "unstyled",
+                },
+              },
+              "entityMap": Object {
+                "__add": [Function],
+                "__create": [Function],
+                "__get": [Function],
+                "__getLastCreatedEntityKey": [Function],
+                "__mergeData": [Function],
+                "__replaceData": [Function],
+                "add": [Function],
+                "create": [Function],
+                "get": [Function],
+                "getLastCreatedEntityKey": [Function],
+                "mergeData": [Function],
+                "replaceData": [Function],
+              },
+              "selectionAfter": Object {
+                "anchorKey": "123",
+                "anchorOffset": 0,
+                "focusKey": "123",
+                "focusOffset": 0,
+                "hasFocus": false,
+                "isBackward": false,
+              },
+              "selectionBefore": Object {
+                "anchorKey": "123",
+                "anchorOffset": 0,
+                "focusKey": "123",
+                "focusOffset": 0,
+                "hasFocus": false,
+                "isBackward": false,
+              },
+            },
+            "decorator": null,
+            "directionMap": Object {
+              "123": "LTR",
+            },
+            "forceSelection": false,
+            "inCompositionMode": false,
+            "inlineStyleOverride": null,
+            "lastChangeType": null,
+            "nativelyRenderedContent": null,
+            "redoStack": Array [],
+            "selection": Object {
+              "anchorKey": "123",
+              "anchorOffset": 0,
+              "focusKey": "123",
+              "focusOffset": 0,
+              "hasFocus": false,
+              "isBackward": false,
+            },
+            "treeMap": Object {
+              "123": Array [
+                Object {
+                  "decoratorKey": null,
+                  "end": 0,
+                  "leaves": Array [
+                    Object {
+                      "end": 0,
+                      "start": 0,
+                    },
+                  ],
+                  "start": 0,
+                },
+              ],
+            },
+            "undoStack": Array [],
+          },
+        }
+      }
+      onChange={[Function]}
+      plugins={
+        Array [
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+        ]
+      }
+      spellCheck={true}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={
+        Array [
+          Object {
+            "name": "nba",
+          },
+          Object {
+            "name": "sweet",
+          },
+        ]
+      }
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+  </div>
+</div>
+`;
+
+exports[`AutocompleteEditor renders correctly 5`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+      "width": 600,
+    }
+  }
+>
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "border": "1px solid #ddd",
+        "cursor": "text",
+        "fontSize": 16,
+        "minHeight": 40,
+        "padding": 10,
+      }
+    }
+  >
+    <PluginEditor
+      customStyleMap={Object {}}
+      decorators={Array []}
+      defaultBlockRenderMap={true}
+      defaultKeyBindings={true}
+      editorState={
+        EditorState {
+          "_immutable": Object {
+            "allowUndo": true,
+            "currentContent": Object {
+              "blockMap": Object {
+                "123": Object {
+                  "characterList": Array [],
+                  "data": Object {},
+                  "depth": 0,
+                  "key": "123",
+                  "text": "",
+                  "type": "unstyled",
+                },
+              },
+              "entityMap": Object {
+                "__add": [Function],
+                "__create": [Function],
+                "__get": [Function],
+                "__getLastCreatedEntityKey": [Function],
+                "__mergeData": [Function],
+                "__replaceData": [Function],
+                "add": [Function],
+                "create": [Function],
+                "get": [Function],
+                "getLastCreatedEntityKey": [Function],
+                "mergeData": [Function],
+                "replaceData": [Function],
+              },
+              "selectionAfter": Object {
+                "anchorKey": "123",
+                "anchorOffset": 0,
+                "focusKey": "123",
+                "focusOffset": 0,
+                "hasFocus": false,
+                "isBackward": false,
+              },
+              "selectionBefore": Object {
+                "anchorKey": "123",
+                "anchorOffset": 0,
+                "focusKey": "123",
+                "focusOffset": 0,
+                "hasFocus": false,
+                "isBackward": false,
+              },
+            },
+            "decorator": null,
+            "directionMap": Object {
+              "123": "LTR",
+            },
+            "forceSelection": false,
+            "inCompositionMode": false,
+            "inlineStyleOverride": null,
+            "lastChangeType": null,
+            "nativelyRenderedContent": null,
+            "redoStack": Array [],
+            "selection": Object {
+              "anchorKey": "123",
+              "anchorOffset": 0,
+              "focusKey": "123",
+              "focusOffset": 0,
+              "hasFocus": false,
+              "isBackward": false,
+            },
+            "treeMap": Object {
+              "123": Array [
+                Object {
+                  "decoratorKey": null,
+                  "end": 0,
+                  "leaves": Array [
+                    Object {
+                      "end": 0,
+                      "start": 0,
+                    },
+                  ],
+                  "start": 0,
+                },
+              ],
+            },
+            "undoStack": Array [],
+          },
+        }
+      }
+      onChange={[Function]}
+      plugins={
+        Array [
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+        ]
+      }
+      spellCheck={true}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={
+        Array [
+          Object {
+            "name": "nba",
+          },
+          Object {
+            "name": "sweet",
+          },
+        ]
+      }
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={
+        Array [
+          Object {
+            "name": "Meta",
+          },
+          Object {
+            "name": "Oculus",
+          },
+        ]
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`AutocompleteEditor renders correctly 6`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+      "width": 600,
+    }
+  }
+>
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "border": "1px solid #ddd",
+        "cursor": "text",
+        "fontSize": 16,
+        "minHeight": 40,
+        "padding": 10,
+      }
+    }
+  >
+    <PluginEditor
+      customStyleMap={Object {}}
+      decorators={Array []}
+      defaultBlockRenderMap={true}
+      defaultKeyBindings={true}
+      editorState={
+        EditorState {
+          "_immutable": Object {
+            "allowUndo": true,
+            "currentContent": Object {
+              "blockMap": Object {
+                "123": Object {
+                  "characterList": Array [],
+                  "data": Object {},
+                  "depth": 0,
+                  "key": "123",
+                  "text": "",
+                  "type": "unstyled",
+                },
+              },
+              "entityMap": Object {
+                "__add": [Function],
+                "__create": [Function],
+                "__get": [Function],
+                "__getLastCreatedEntityKey": [Function],
+                "__mergeData": [Function],
+                "__replaceData": [Function],
+                "add": [Function],
+                "create": [Function],
+                "get": [Function],
+                "getLastCreatedEntityKey": [Function],
+                "mergeData": [Function],
+                "replaceData": [Function],
+              },
+              "selectionAfter": Object {
+                "anchorKey": "123",
+                "anchorOffset": 0,
+                "focusKey": "123",
+                "focusOffset": 0,
+                "hasFocus": false,
+                "isBackward": false,
+              },
+              "selectionBefore": Object {
+                "anchorKey": "123",
+                "anchorOffset": 0,
+                "focusKey": "123",
+                "focusOffset": 0,
+                "hasFocus": false,
+                "isBackward": false,
+              },
+            },
+            "decorator": null,
+            "directionMap": Object {
+              "123": "LTR",
+            },
+            "forceSelection": false,
+            "inCompositionMode": false,
+            "inlineStyleOverride": null,
+            "lastChangeType": null,
+            "nativelyRenderedContent": null,
+            "redoStack": Array [],
+            "selection": Object {
+              "anchorKey": "123",
+              "anchorOffset": 0,
+              "focusKey": "123",
+              "focusOffset": 0,
+              "hasFocus": false,
+              "isBackward": false,
+            },
+            "treeMap": Object {
+              "123": Array [
+                Object {
+                  "decoratorKey": null,
+                  "end": 0,
+                  "leaves": Array [
+                    Object {
+                      "end": 0,
+                      "start": 0,
+                    },
+                  ],
+                  "start": 0,
+                },
+              ],
+            },
+            "undoStack": Array [],
+          },
+        }
+      }
+      onChange={[Function]}
+      plugins={
+        Array [
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+          Object {
+            "MentionSuggestions": [Function],
+            "decorators": Array [
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+              Object {
+                "component": [Function],
+                "strategy": [Function],
+              },
+            ],
+            "getAccessibilityProps": [Function],
+            "handleReturn": [Function],
+            "initialize": [Function],
+            "onChange": [Function],
+            "onDownArrow": [Function],
+            "onEscape": [Function],
+            "onTab": [Function],
+            "onUpArrow": [Function],
+          },
+        ]
+      }
+      spellCheck={true}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+    <Decorated(Component)
+      onSearchChange={[Function]}
+      suggestions={Array []}
+    />
+  </div>
+</div>
+`;

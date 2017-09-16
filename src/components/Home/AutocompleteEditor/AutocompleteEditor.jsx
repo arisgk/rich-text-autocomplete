@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { EditorState } from 'draft-js';
 import Editor from 'draft-js-plugins-editor';
 import createAutocompletePlugin from 'draft-js-mention-plugin';
+import * as schemas from '../../../schemas/propTypes';
 import './styles/autocomplete.css';
 
 const mentionPlugin = createAutocompletePlugin({
@@ -46,9 +48,9 @@ class AutocompleteEditor extends Component {
       editorState: EditorState.createEmpty(),
     };
 
-    this.focus = () => this.refs.editor.focus();
-    this.onChange = editorState => this.setState({ editorState });
     this.onSearchChange = this.onSearchChange.bind(this);
+    this.handleEditorClick = this.handleEditorClick.bind(this);
+    this.handleEditorChange = this.handleEditorChange.bind(this);
   }
 
   onSearchChange(value, name) {
@@ -66,16 +68,24 @@ class AutocompleteEditor extends Component {
     }
   }
 
+  handleEditorClick() {
+    this.editor.focus();
+  }
+
+  handleEditorChange(editorState) {
+    this.setState({ editorState });
+  }
+
   render() {
     const { mentionSuggestions, hashtagSuggestions, relationSuggestions } = this.props;
 
     return (
       <div style={styles.root}>
-        <div style={styles.editor} onClick={this.focus}>
+        <div style={styles.editor} onClick={this.handleEditorClick}>
           <Editor
             editorState={this.state.editorState}
-            onChange={this.onChange}
-            ref="editor"
+            onChange={this.handleEditorChange}
+            ref={(editor) => { this.editor = editor; }}
             plugins={plugins}
             spellCheck
           />
@@ -96,5 +106,23 @@ class AutocompleteEditor extends Component {
     );
   }
 }
+
+AutocompleteEditor.propTypes = {
+  mentionSuggestions: schemas.mentionSuggestions,
+  hashtagSuggestions: schemas.hashtagSuggestions,
+  relationSuggestions: schemas.relationSuggestions,
+  onMentionSearch: PropTypes.func,
+  onHashtagSearch: PropTypes.func,
+  onRelationSearch: PropTypes.func,
+};
+
+AutocompleteEditor.defaultProps = {
+  mentionSuggestions: [],
+  hashtagSuggestions: [],
+  relationSuggestions: [],
+  onMentionSearch: () => {},
+  onHashtagSearch: () => {},
+  onRelationSearch: () => {},
+};
 
 export default AutocompleteEditor;

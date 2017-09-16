@@ -1,12 +1,28 @@
 import React, { Component } from 'react';
-import { CompositeDecorator, EditorState } from 'draft-js';
+import { EditorState } from 'draft-js';
 import Editor from 'draft-js-plugins-editor';
 import 'draft-js-mention-plugin/lib/plugin.css';
-import createMentionPlugin from 'draft-js-mention-plugin';
+import createAutocompletePlugin from 'draft-js-mention-plugin';
 
-const mentionPlugin = createMentionPlugin();
-const { MentionSuggestions } = mentionPlugin;
-const plugins = [mentionPlugin];
+const mentionPlugin = createAutocompletePlugin({
+  mentionPrefix: '@',
+  mentionTrigger: '@',
+});
+const MentionSuggestions = mentionPlugin.MentionSuggestions;
+
+const hashtagPlugin = createAutocompletePlugin({
+  mentionPrefix: '#',
+  mentionTrigger: '#',
+});
+const HashtagSuggestions = hashtagPlugin.MentionSuggestions;
+
+const relationPlugin = createAutocompletePlugin({
+  mentionPrefix: '<>',
+  mentionTrigger: '<>',
+});
+const RelationSuggestions = relationPlugin.MentionSuggestions;
+
+const plugins = [mentionPlugin, hashtagPlugin, relationPlugin];
 
 const styles = {
   root: {
@@ -35,13 +51,23 @@ class AutocompleteEditor extends Component {
     this.onSearchChange = this.onSearchChange.bind(this);
   }
 
-  onSearchChange({ value }) {
-    const { onMentionSearch } = this.props;
-    onMentionSearch(value);
+  onSearchChange(value, name) {
+    const { onMentionSearch, onHashtagSearch, onRelationSearch } = this.props;
+
+    switch (name) {
+      case 'mention':
+        return onMentionSearch(value);
+      case 'hashtag':
+        return onHashtagSearch(value);
+      case 'relation':
+        return onRelationSearch(value);
+      default:
+        return null;
+    }
   }
 
   render() {
-    const { mentionSuggestions } = this.props;
+    const { mentionSuggestions, hashtagSuggestions, relationSuggestions } = this.props;
 
     return (
       <div style={styles.root}>
@@ -54,8 +80,16 @@ class AutocompleteEditor extends Component {
             spellCheck
           />
           <MentionSuggestions
-            onSearchChange={this.onSearchChange}
+            onSearchChange={({ value }) => this.onSearchChange(value, 'mention')}
             suggestions={mentionSuggestions}
+          />
+          <HashtagSuggestions
+            onSearchChange={({ value }) => this.onSearchChange(value, 'hashtag')}
+            suggestions={hashtagSuggestions}
+          />
+          <RelationSuggestions
+            onSearchChange={({ value }) => this.onSearchChange(value, 'relation')}
+            suggestions={relationSuggestions}
           />
         </div>
       </div>

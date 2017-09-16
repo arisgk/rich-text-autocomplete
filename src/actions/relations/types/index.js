@@ -1,0 +1,1 @@
+export const RELATION_SEARCH = 'RELATION_SEARCH';

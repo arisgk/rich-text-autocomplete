@@ -8,11 +8,8 @@ const styles = {
   },
 };
 
-const HandleSpan = ({ offsetKey, children }) => (
-  <span
-    style={styles.container}
-    data-offset-key={offsetKey}
-  >
+const HandleSpan = ({ children }) => (
+  <span style={styles.container}>
     {children}
   </span>
 );

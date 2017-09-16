@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { CompositeDecorator, Editor, EditorState } from 'draft-js';
-import HandleSpan from './HandleSpan';
+import HandleAutocomplete from './HandleAutocomplete';
 import HashtagSpan from './HashtagSpan';
 import handleStrategy from '../../../utils/decoratorStrategies/handle';
 import hashtagStrategy from '../../../utils/decoratorStrategies/hashtag';
@@ -25,7 +25,7 @@ class AutocompleteEditor extends Component {
     const compositeDecorator = new CompositeDecorator([
       {
         strategy: handleStrategy,
-        component: HandleSpan,
+        component: HandleAutocomplete,
       },
       {
         strategy: hashtagStrategy,

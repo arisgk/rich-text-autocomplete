@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { EditorState } from 'draft-js';
 import Editor from 'draft-js-plugins-editor';
-import 'draft-js-mention-plugin/lib/plugin.css';
 import createAutocompletePlugin from 'draft-js-mention-plugin';
+import './styles/autocomplete.css';
 
 const mentionPlugin = createAutocompletePlugin({
   mentionPrefix: '@',

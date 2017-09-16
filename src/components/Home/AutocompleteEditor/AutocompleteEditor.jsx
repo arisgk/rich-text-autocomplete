@@ -9,18 +9,21 @@ import './styles/autocomplete.css';
 const mentionPlugin = createAutocompletePlugin({
   mentionPrefix: '@',
   mentionTrigger: '@',
+  entityMutability: 'IMMUTABLE',
 });
 const MentionSuggestions = mentionPlugin.MentionSuggestions;
 
 const hashtagPlugin = createAutocompletePlugin({
   mentionPrefix: '#',
   mentionTrigger: '#',
+  entityMutability: 'IMMUTABLE',
 });
 const HashtagSuggestions = hashtagPlugin.MentionSuggestions;
 
 const relationPlugin = createAutocompletePlugin({
   mentionPrefix: '<>',
   mentionTrigger: '<>',
+  entityMutability: 'IMMUTABLE',
 });
 const RelationSuggestions = relationPlugin.MentionSuggestions;
 
